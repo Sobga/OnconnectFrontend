@@ -1,0 +1,169 @@
+:root { 
+  --black: #000000;
+  --blue-bayoux: #4d6077;
+  --cerulean: #00a3e0;
+  --dove-gray: #707070;
+  --mercury: #e6e6e6;
+  --mischka: #ced0d8;
+  --tangaroa: #041e42;
+  --whisper: #f5f6fa;
+  --white: #ffffff;
+ 
+  --font-size-l: 23px;
+  --font-size-m: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 25px;
+  --font-size-xxxl: 34px;
+  --font-size-xxxxl: 35px;
+  --font-size-xxxxxl: 55px;
+ 
+  --font-family-oswald: "Oswald", Helvetica;
+  --font-family-source_sans_pro: "Source Sans Pro", Helvetica;
+}
+.sourcesanspro-normal-blue-bayoux-20px {
+  color: var(--blue-bayoux);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sourcesanspro-semi-bold-tangaroa-25px {
+  color: var(--tangaroa);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sourcesanspro-semi-bold-tangaroa-24px {
+  color: var(--tangaroa);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sourcesanspro-semi-bold-cerulean-20px {
+  color: var(--cerulean);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sourcesanspro-semi-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sourcesanspro-semi-bold-tangaroa-20px {
+  color: var(--tangaroa);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.oswald-normal-cerulean-55px {
+  color: var(--cerulean);
+  font-family: var(--font-family-oswald);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sourcesanspro-normal-tangaroa-25px {
+  color: var(--tangaroa);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sourcesanspro-semi-bold-white-25px {
+  color: var(--white);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.oswald-normal-tangaroa-55px {
+  color: var(--tangaroa);
+  font-family: var(--font-family-oswald);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sourcesanspro-semi-bold-white-34px {
+  color: var(--white);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sourcesanspro-semi-bold-white-35px {
+  color: var(--white);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sourcesanspro-semi-bold-blue-bayoux-25px {
+  color: var(--blue-bayoux);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sourcesanspro-semi-bold-black-25px {
+  color: var(--black);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sourcesanspro-bold-tangaroa-25px {
+  color: var(--tangaroa);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.oswald-normal-cerulean-155px {
+  color: var(--cerulean);
+  font-family: var(--font-family-oswald);
+  font-size: 155px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.border-2px-white {
+  border: 2px solid var(--white);
+}
+
+.border-1px-dove-gray {
+  border: 1px solid var(--dove-gray);
+}
+
+.border-2px-tangaroa {
+  border: 2px solid var(--tangaroa);
+}
+
+.border-2px-cerulean {
+  border: 2px solid var(--cerulean);
+}
+
+.border-2px-whisper {
+  border: 2px solid var(--whisper);
+}

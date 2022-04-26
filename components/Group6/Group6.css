@@ -1,0 +1,32 @@
+.group-6 {
+  display: flex;
+  height: 64px;
+  left: 1559px;
+  position: absolute;
+  top: 21px;
+  width: 64px;
+}
+
+.group-5 {
+  background-image: url(/static/img/group-4-1@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex: 1;
+  width: 64px;
+}
+
+.ellipse-4 {
+  border-radius: 32px;
+  flex: 1;
+  margin-bottom: -1px;
+  margin-left: -1px;
+  margin-right: -1px;
+  margin-top: -1px;
+  width: 66px;
+}
+
+.group-6.group-92 {
+  left: 1561px;
+}
+
