@@ -1,0 +1,1134 @@
+.updates-frame {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  overflow: hidden;
+  width: 1920px;
+}
+
+.overlap-group3-2 {
+  position: relative;
+  width: 1920px;
+}
+
+.rectangle-1-1 {
+  background-color: var(--whisper);
+  height: 1078px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 1920px;
+}
+
+.rectangle-2-3 {
+  background-color: var(--white);
+  height: 111px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.rectangle-3-1 {
+  background: linear-gradient(282.94deg, #00a3e0 -0.46%, #009bd7 2.28%, #0175aa 18.74%, #025684 35.28%, #033d67 51.67%, #032c52 67.85%, #032146 83.74%, #041e42 99.01%);
+  border-radius: 18px;
+  height: 174px;
+  left: 276px;
+  position: absolute;
+  top: 184px;
+  width: 1356px;
+}
+
+.onconnect-4 {
+  height: 113px;
+  left: 174px;
+  letter-spacing: 0;
+  line-height: 66px;
+  position: absolute;
+  top: 2px;
+  width: 226px;
+}
+
+.welcome-back-lars {
+  height: 85px;
+  left: 462px;
+  letter-spacing: 0;
+  line-height: 40.8px;
+  position: absolute;
+  top: 228px;
+  width: 356px;
+}
+
+.span1 {
+  color: var(--white);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-xxxl);
+}
+
+.span2 {
+  color: var(--white);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-l);
+}
+
+.path-2-3 {
+  height: 11px;
+  left: 1716px;
+  object-fit: cover;
+  position: absolute;
+  top: 51px;
+  width: 17px;
+}
+
+.profile-4 {
+  left: 1637px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  top: 38px;
+  white-space: nowrap;
+}
+
+.subscriptions-5 {
+  left: 1269px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  top: 40px;
+  white-space: nowrap;
+}
+
+.path-4-1 {
+  cursor: pointer;
+  height: 45px;
+  left: 189px;
+  object-fit: cover;
+  position: absolute;
+  top: 192px;
+  width: 26px;
+}
+
+.community-4 {
+  left: 1012px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  top: 40px;
+  white-space: nowrap;
+}
+
+.rectangle-30 {
+  background: linear-gradient(180deg, #e6e6e6 0%, #e8e8e9 9.04%, #f1f2f5 55.39%, #f5f6fa 100%);
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 111px;
+  width: 1920px;
+}
+
+.overlap-group1-4 {
+  height: 34px;
+  left: 494px;
+  position: absolute;
+  top: 40px;
+  width: 95px;
+}
+
+.updates-4 {
+  left: 2px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.rectangle-31-4 {
+  background-color: var(--tangaroa);
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 31px;
+  width: 95px;
+}
+
+.line-1-3 {
+  height: 111px;
+  left: 161px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.line-11-3 {
+  height: 111px;
+  left: 1760px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.line-14-3 {
+  height: 111px;
+  left: 675px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.line-17-3 {
+  height: 111px;
+  left: 1209px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.line-19-3 {
+  height: 111px;
+  left: 1475px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.line-20-3 {
+  height: 111px;
+  left: 1541px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.group-125 {
+  align-items: flex-start;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 117px;
+  justify-content: flex-end;
+  left: 10px;
+  min-width: 1092px;
+  padding: 26.7px 235.9px;
+  position: absolute;
+  top: 388px;
+}
+
+.neoplasms-mole {
+  letter-spacing: 0;
+  line-height: 30.0px;
+  min-height: 34px;
+  white-space: nowrap;
+}
+
+.span1-1 {
+  letter-spacing: -0.35px;
+}
+
+.span2-1 {
+  letter-spacing: -0.33px;
+}
+
+.span4 {
+  letter-spacing: 0.35px;
+}
+
+.span-5 {
+  letter-spacing: -0.62px;
+}
+
+.group-200 {
+  align-items: flex-start;
+  display: flex;
+  left: 241px;
+  position: relative;
+  top: 473px;
+  width: 1439px;
+  margin-top: 30px;
+}
+
+.overlap-group2-4 {
+  height: 649px;
+  position: relative;
+  width: 1439px;
+}
+
+.overlap-group-11 {
+  height: 649px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 743px;
+}
+
+.group-130 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 252px;
+  left: 3px;
+  mix-blend-mode: multiply;
+  opacity: 0.15;
+  position: absolute;
+  top: 397px;
+  width: 740px;
+}
+
+.path-102 {
+  height: 167px;
+  left: 46px;
+  object-fit: cover;
+  position: absolute;
+  top: 440px;
+  width: 655px;
+}
+
+.group-135 {
+  background-color: "ff3300";
+  height: 432px;
+  left: 0;
+  mix-blend-mode: multiply;
+  top: 0;
+  width: 740px;
+}
+
+.card {
+  background-size: cover;
+  height: 432px;
+  mix-blend-mode: multiply;
+  opacity: 0.15;
+  position: absolute;
+  width: 740px;
+}
+
+.path-103 {
+  height: 348px;
+  left: 42px;
+  object-fit: cover;
+  position: absolute;
+  top: 42px;
+  width: 655px;
+}
+
+.the-between-now-and {
+  left: 64px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  top: 55px;
+  white-space: nowrap;
+}
+
+.span-6 {
+  letter-spacing: -0.23px;
+}
+
+.span-7 {
+  letter-spacing: -0.12px;
+}
+
+.span-8 {
+  letter-spacing: -0.15px;
+}
+
+.span-9 {
+  letter-spacing: -0.08px;
+}
+
+.span9 {
+  letter-spacing: -0.25px;
+}
+
+.span11 {
+  letter-spacing: -0.58px;
+}
+
+.chemotherapy-and-imm {
+  left: 64px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  top: 85px;
+  white-space: nowrap;
+}
+
+.span-10 {
+  letter-spacing: -0.55px;
+}
+
+.span-11 {
+  letter-spacing: -0.53px;
+}
+
+.name {
+  left: 65px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 177px;
+  white-space: nowrap;
+}
+
+.span-12 {
+  letter-spacing: -0.18px;
+}
+
+.span-13 {
+  letter-spacing: -0.40px;
+}
+
+.span-14 {
+  letter-spacing: -0.42px;
+}
+
+.span-15 {
+  letter-spacing: -0.38px;
+}
+
+.span-16 {
+  letter-spacing: -0.48px;
+}
+
+.span-17 {
+  letter-spacing: -0.46px;
+}
+
+.span-18 {
+  letter-spacing: -0.28px;
+}
+
+.group-1 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 649px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1439px;
+}
+
+.ccdc6 {
+  left: 77px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 134px;
+  white-space: nowrap;
+}
+
+.span0 {
+  letter-spacing: -0.64px;
+}
+
+.biomarkers-1 {
+  left: 173px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 135px;
+  white-space: nowrap;
+}
+
+.span-19 {
+  letter-spacing: -0.44px;
+}
+
+.span-20 {
+  letter-spacing: -0.10px;
+}
+
+.lung-neoplasms {
+  left: 306px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 133px;
+  white-space: nowrap;
+}
+
+.span-21 {
+  letter-spacing: -0.20px;
+}
+
+.antineoplastic-agents {
+  left: 482px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 134px;
+  white-space: nowrap;
+}
+
+.span-22 {
+  letter-spacing: -0.30px;
+}
+
+.lung-cancer-is-the-m {
+  left: 64px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 212px;
+  white-space: nowrap;
+}
+
+.span-23 {
+  letter-spacing: -0.06px;
+}
+
+.span16 {
+  letter-spacing: -0.70px;
+}
+
+.despite-great-eort {
+  left: 64px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 236px;
+  white-space: nowrap;
+}
+
+.span-24 {
+  letter-spacing: -0.26px;
+}
+
+.span-25 {
+  letter-spacing: -1.12px;
+}
+
+.span22 {
+  letter-spacing: 0.12px;
+}
+
+.surveillance-of-high {
+  left: 64px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 260px;
+  white-space: nowrap;
+}
+
+.span-26 {
+  letter-spacing: 0.50px;
+}
+
+.when-already-surgica {
+  left: 64px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 284px;
+  white-space: nowrap;
+}
+
+.read-full-article {
+  left: 77px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 342px;
+  white-space: nowrap;
+}
+
+.span-27 {
+  letter-spacing: -0.22px;
+}
+
+.group-1-1 {
+  display: flex;
+  height: 649px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1439px;
+}
+
+.group-153 {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  width: 1439px;
+}
+
+.path-107 {
+  align-self: center;
+  cursor: pointer;
+  height: 36px;
+  margin-left: 65px;
+  margin-top: 63.0px;
+  object-fit: cover;
+  width: 158px;
+}
+
+.overlap-group-12 {
+  height: 433px;
+  margin-left: 476px;
+  position: relative;
+  width: 740px;
+}
+
+.group-152 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 433px;
+  left: 0;
+  mix-blend-mode: multiply;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  width: 740px;
+}
+
+.path-108 {
+  height: 348px;
+  left: 43px;
+  object-fit: cover;
+  position: absolute;
+  top: 42px;
+  width: 655px;
+}
+
+.asco-guidelines-podc {
+  left: 763px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  top: 56px;
+  white-space: nowrap;
+}
+
+.span1-2 {
+  letter-spacing: -0.80px;
+}
+
+.span-28 {
+  letter-spacing: -0.50px;
+}
+
+.span16-1 {
+  letter-spacing: -0.65px;
+}
+
+.span21 {
+  letter-spacing: -0.75px;
+}
+
+.without-driver-alter {
+  left: 763px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  top: 86px;
+  white-space: nowrap;
+}
+
+.nsclc {
+  left: 770px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 139px;
+  white-space: nowrap;
+}
+
+.span-29 {
+  letter-spacing: -0.60px;
+}
+
+.pd-l1 {
+  color: var(--white);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: 19.6px;
+  font-weight: 600;
+  left: 857px;
+  letter-spacing: 0;
+  line-height: 23.5px;
+  position: absolute;
+  top: 140px;
+  white-space: nowrap;
+}
+
+.systematic-therapy-treatment {
+  left: 1067px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 138px;
+  white-space: nowrap;
+}
+
+.span-30 {
+  letter-spacing: -0.32px;
+}
+
+.guidelines {
+  left: 942px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 139px;
+  white-space: nowrap;
+}
+
+.an-interview-with-dr {
+  left: 906px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 199px;
+  white-space: nowrap;
+}
+
+.span5 {
+  letter-spacing: 0.08px;
+}
+
+.university-simon-can {
+  left: 906px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 223px;
+  white-space: nowrap;
+}
+
+.span9-1 {
+  letter-spacing: -1.14px;
+}
+
+.span15 {
+  letter-spacing: 0.48px;
+}
+
+.from-helen-f-graham {
+  left: 906px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 247px;
+  white-space: nowrap;
+}
+
+.span3 {
+  letter-spacing: -1.42px;
+}
+
+.institute-on-therap {
+  left: 906px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 271px;
+  white-space: nowrap;
+}
+
+.listen-to-podcast {
+  left: 776px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 343px;
+  white-space: nowrap;
+}
+
+.group-168 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 116px;
+  left: 762px;
+  position: absolute;
+  top: 193px;
+  width: 119px;
+}
+
+.incidence-clinical {
+  left: 64px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  top: 454px;
+  white-space: nowrap;
+}
+
+.span-31 {
+  letter-spacing: -0.24px;
+}
+
+.span-32 {
+  letter-spacing: -0.36px;
+}
+
+.span-33 {
+  letter-spacing: -0.07px;
+}
+
+.cardiovascular-immun {
+  left: 64px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  top: 482px;
+  white-space: nowrap;
+}
+
+.span-34 {
+  letter-spacing: -0.14px;
+}
+
+.span6 {
+  letter-spacing: 0.24px;
+}
+
+.span22-1 {
+  letter-spacing: 0.43px;
+}
+
+.with-immune-checkpoint-inhibitors {
+  left: 64px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  top: 512px;
+  white-space: nowrap;
+}
+
+.phone {
+  left: 429px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  top: 511px;
+  white-space: nowrap;
+}
+
+.immunotherapy {
+  left: 78px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 562px;
+  white-space: nowrap;
+}
+
+.lung-neoplasms-1 {
+  left: 253px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 561px;
+  white-space: nowrap;
+}
+
+.cardiotoxity {
+  left: 428px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 562px;
+  white-space: nowrap;
+}
+
+.oncology {
+  left: 572px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 562px;
+  white-space: nowrap;
+}
+
+.span-35 {
+  letter-spacing: 0.20px;
+}
+
+.group-184 {
+  align-items: flex-end;
+  display: flex;
+  flex: 1;
+  width: 1439px;
+}
+
+.overlap-group-13 {
+  align-items: flex-end;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 11px;
+  justify-content: flex-end;
+  margin-bottom: 42.43px;
+  margin-left: 65px;
+  min-width: 286px;
+  padding: 0 13.4px;
+}
+
+.rectangle-262 {
+  background-color: var(--cerulean);
+  height: 5px;
+  margin-bottom: -0.32px;
+  width: 2px;
+}
+
+.path-11 {
+  height: 2px;
+  margin-bottom: -0.32px;
+  margin-left: 3px;
+  object-fit: cover;
+  width: 14px;
+}
+
+.path-119 {
+  height: 2px;
+  margin-bottom: -0.32px;
+  margin-left: 14px;
+  object-fit: cover;
+  width: 8px;
+}
+
+.path-12 {
+  height: 2px;
+  margin-bottom: -0.32px;
+  margin-left: 3px;
+  object-fit: cover;
+  width: 7px;
+}
+
+.path-121 {
+  height: 2px;
+  margin-bottom: -0.32px;
+  margin-left: 7px;
+  object-fit: cover;
+  width: 7px;
+}
+
+.path-122 {
+  height: 6px;
+  margin-bottom: -0.32px;
+  margin-left: 2px;
+  object-fit: cover;
+  width: 8px;
+}
+
+.rectangle-263 {
+  background-color: var(--cerulean);
+  height: 6px;
+  margin-bottom: -0.32px;
+  margin-left: 2px;
+  width: 2px;
+}
+
+.path-125 {
+  height: 2px;
+  margin-bottom: -0.32px;
+  margin-left: 2px;
+  object-fit: cover;
+  width: 4px;
+}
+
+.path-1-1 {
+  height: 2px;
+  margin-bottom: -0.32px;
+  margin-left: 2px;
+  object-fit: cover;
+  width: 8px;
+}
+
+.path-127 {
+  height: 2px;
+  margin-bottom: -0.32px;
+  margin-left: 3px;
+  object-fit: cover;
+  width: 8px;
+}
+
+.path-128 {
+  height: 2px;
+  margin-bottom: -0.32px;
+  margin-left: 8px;
+  object-fit: cover;
+  width: 8px;
+}
+
+.path-129 {
+  height: 5px;
+  margin-bottom: -0.32px;
+  margin-left: 2px;
+  object-fit: cover;
+  width: 6px;
+}
+
+.path-130 {
+  height: 2px;
+  margin-bottom: -0.32px;
+  margin-left: 11px;
+  object-fit: cover;
+  width: 8px;
+}
+
+.path-131 {
+  height: 6px;
+  margin-bottom: -0.32px;
+  margin-left: 3px;
+  object-fit: cover;
+  width: 8px;
+}
+
+.path-132 {
+  height: 6px;
+  margin-bottom: -0.32px;
+  margin-left: 8px;
+  object-fit: cover;
+  width: 8px;
+}
+
+.path-133 {
+  height: 5px;
+  margin-bottom: -0.32px;
+  margin-left: 7px;
+  object-fit: cover;
+  width: 6px;
+}
+
+.path-135 {
+  height: 2px;
+  margin-bottom: -0.32px;
+  margin-left: 3px;
+  object-fit: cover;
+  width: 6px;
+}
+
+.path-136 {
+  height: 2px;
+  margin-bottom: -0.32px;
+  margin-left: 1px;
+  object-fit: cover;
+  width: 7px;
+}
+
+.overlap-group1-5 {
+  height: 251px;
+  margin-left: 348px;
+  position: relative;
+  width: 740px;
+}
+
+.group-183 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 251px;
+  left: 0;
+  mix-blend-mode: multiply;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  width: 740px;
+}
+
+.path-137 {
+  height: 167px;
+  left: 43px;
+  object-fit: cover;
+  position: absolute;
+  top: 42px;
+  width: 655px;
+}
+
+.primary-lung-hyalini {
+  left: 763px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  top: 454px;
+  white-space: nowrap;
+}
+
+.span1-3 {
+  letter-spacing: 0.36px;
+}
+
+.challenge-in-biopsy {
+  left: 763px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  top: 484px;
+  white-space: nowrap;
+}
+
+.phone-1 {
+  left: 961px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  top: 483px;
+  white-space: nowrap;
+}
+
+.molecular-pathology {
+  left: 1003px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 537px;
+  white-space: nowrap;
+}
+
+.ewsr1-atf1 {
+  left: 777px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 537px;
+  white-space: nowrap;
+}
+
+.span3-1 {
+  letter-spacing: -1.26px;
+}
+
+.biopsy {
+  left: 1215px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 538px;
+  white-space: nowrap;
+}
+
+.salivary-gland-tumors {
+  left: 1081px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 572px;
+  white-space: nowrap;
+}
+
+.span3-2 {
+  letter-spacing: 0.30px;
+}
+
+.hyalinizing-clear-cell-carcinoma {
+  left: 776px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 571px;
+  white-space: nowrap;
+}
+
+.place {
+  left: 921px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 537px;
+  white-space: nowrap;
+}
+

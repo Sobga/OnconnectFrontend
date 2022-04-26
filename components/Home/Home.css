@@ -1,0 +1,296 @@
+.home {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  overflow: hidden;
+  width: 1920px;
+}
+
+.overlap-group1-6 {
+  height: 1080px;
+  margin-left: -2px;
+  position: relative;
+  width: 1924px;
+}
+
+.rectangle-139 {
+  background-color: var(--whisper);
+  height: 1078px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 1920px;
+}
+
+.rectangle-140 {
+  background-color: var(--white);
+  height: 111px;
+  left: 2px;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.onconnect-5 {
+  height: 104px;
+  left: 176px;
+  letter-spacing: 0;
+  line-height: 66px;
+  position: absolute;
+  top: 4px;
+  width: 226px;
+}
+
+.path-64 {
+  height: 11px;
+  left: 1718px;
+  object-fit: cover;
+  position: absolute;
+  top: 51px;
+  width: 17px;
+}
+
+.profile-5 {
+  left: 1639px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  top: 38px;
+  white-space: nowrap;
+}
+
+.subscriptions-6 {
+  left: 1270px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  top: 40px;
+  white-space: nowrap;
+}
+
+.community-5 {
+  left: 1013px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  top: 40px;
+  white-space: nowrap;
+}
+
+.rectangle-141 {
+  background: linear-gradient(180deg, #e6e6e6 0%, #e8e8e9 9.04%, #f1f2f5 55.39%, #f5f6fa 100%);
+  height: 30px;
+  left: 2px;
+  position: absolute;
+  top: 111px;
+  width: 1920px;
+}
+
+.group-95 {
+  display: flex;
+  height: 32px;
+  left: 498px;
+  position: absolute;
+  top: 39px;
+  width: 91px;
+}
+
+.updates-5 {
+  flex: 1;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  margin-bottom: -3.0px;
+  margin-right: -2px;
+  margin-top: 1.0px;
+  white-space: nowrap;
+  width: 91px;
+}
+
+.line-2 {
+  height: 111px;
+  left: 162px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.line-22 {
+  height: 111px;
+  left: 1761px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.line-24 {
+  height: 111px;
+  left: 677px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.line-25 {
+  height: 111px;
+  left: 1211px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.line-26 {
+  height: 111px;
+  left: 1477px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.line-27 {
+  height: 111px;
+  left: 1543px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.group-104 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 556px;
+  left: 2px;
+  position: absolute;
+  top: 111px;
+  width: 1923px;
+}
+
+.group-108 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 572px;
+  left: 0;
+  position: absolute;
+  top: 111px;
+  width: 1922px;
+}
+
+.title {
+  height: 218px;
+  left: 633px;
+  letter-spacing: 0;
+  line-height: 66px;
+  position: absolute;
+  text-align: center;
+  top: 263px;
+  width: 660px;
+}
+
+.span0-1 {
+  color: var(--tangaroa);
+  font-family: var(--font-family-oswald);
+  font-size: 155px;
+}
+
+.helping-lung-oncolog {
+  color: var(--tangaroa);
+  font-family: var(--font-family-source_sans_pro);
+  font-size: var(--font-size-xxxxl);
+  font-weight: 600;
+  left: 463px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  text-align: center;
+  top: 415px;
+  width: 1034px;
+}
+
+.rectangle-179 {
+  background: linear-gradient(276.36deg, #00a3e0 -5.46%, #041e42 100%);
+  border-radius: 18px;
+  cursor: pointer;
+  height: 78px;
+  left: 971px;
+  position: absolute;
+  top: 573px;
+  width: 663px;
+}
+
+.schedule-6 {
+  left: 971px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  text-align: center;
+  top: 592px;
+  width: 665px;
+}
+
+.rectangle-180 {
+  background: linear-gradient(276.36deg, #00a3e0 -5.46%, #041e42 100%);
+  border-radius: 18px;
+  cursor: pointer;
+  height: 78px;
+  left: 288px;
+  position: absolute;
+  top: 573px;
+  width: 663px;
+}
+
+.rectangle-181 {
+  background: linear-gradient(276.36deg, #00a3e0 -5.46%, #041e42 100%);
+  border-radius: 18px;
+  height: 78px;
+  left: 288px;
+  position: absolute;
+  top: 667px;
+  width: 663px;
+}
+
+.rectangle-182 {
+  background: linear-gradient(276.36deg, #00a3e0 -5.46%, #041e42 100%);
+  border-radius: 18px;
+  height: 78px;
+  left: 971px;
+  position: absolute;
+  top: 667px;
+  width: 663px;
+}
+
+.updates-6 {
+  left: 288px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  text-align: center;
+  top: 592px;
+  width: 665px;
+}
+
+.subscriptions-7 {
+  cursor: pointer;
+  left: 971px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  text-align: center;
+  top: 686px;
+  width: 665px;
+}
+
+.community-6 {
+  left: 288px;
+  letter-spacing: 0;
+  line-height: 30.0px;
+  position: absolute;
+  text-align: center;
+  top: 685px;
+  width: 665px;
+}
+
