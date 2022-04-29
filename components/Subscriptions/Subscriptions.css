@@ -192,12 +192,12 @@
 }
 
 .group-50 {
-  background-color: var(--white);
+  background-color: white;
   border-radius: 18px;
   box-shadow: 0px 0px 14px #00000026;
   height: 540px;
   left: 0;
-  position: absolute;
+  position: relative;
   top: 84px;
   width: 1356px;
 }
@@ -371,8 +371,8 @@
 .overlap-group4-1 {
   height: 54px;
   left: 518px;
-  position: absolute;
-  top: 194px;
+  position: relative;
+  top: 215px;
   width: 332px;
 }
 
@@ -544,7 +544,24 @@
   left: 49px;
   position: absolute;
   top: 279px;
-  width: 93%;
+  width: 40%;
+}
+
+.rectangle-662 {
+  background-color: var(--whisper);
+  border-radius: 12px;
+  height: 306px;
+  width: 40%;
+  margin-left: 100px;
+}
+
+.cloud-icon {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 43px;
+  position: absolute;
+  width: 40px;
 }
 
 .topics {

@@ -14,7 +14,7 @@ window.onkeydown = function(event){
 
 	
 	// Find parent - if no parent, stop
-	const parent_list = document.getElementsByClassName("scheduling screen");
+	const parent_list = document.getElementsByClassName("home screen");
 	if (parent_list.length == 0)
 		return;
 	const parent_elem = parent_list[0];
@@ -24,10 +24,12 @@ window.onkeydown = function(event){
 	const container = document.createElement("div");
 	const img = document.createElement("img");
 	
-	img.src = '/img/notification_package.png'
+	img.src = '/img/notification_package.png';
+	img.style = "border-radius: 17px";
 	img.onclick = function() {
-		window.location.href = 'http://localhost:1234/home';
+		window.location.href = 'http://localhost:1234/updates-frame';
 	};
+
 	
 	container.appendChild(img);
 

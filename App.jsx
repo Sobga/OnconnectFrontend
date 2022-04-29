@@ -36,10 +36,10 @@ function App() {
           <UpdatesResearch {...updatesResearchData} />
         </Route>
         <Route path="/updates-frame">
-          <Home {...homeData} />
+        <UpdatesFrame {...updatesFrameData} />
         </Route>
         <Route path="/:path(|home)">
-          <UpdatesFrame {...updatesFrameData} />
+          <Home {...homeData} />
         </Route>
       </Switch>
     </Router>

@@ -7,12 +7,13 @@ import Group9 from "../Group9";
 import Group10 from "../Group10";
 import "./UpdatesFrame.css";
 import { getUsersInterests, getUsersSuggestions, initializeUser, getKeywordsSynonyms } from "../../state/actions";
-import { getTodaysDate } from "../../static/helpers";
+import { getKeywordName, getTodaysDate } from "../../static/helpers";
 import { Card } from "@material-ui/core";
 import { Button, CardContent, Divider, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Stack from '@mui/material/Stack';
 import { almostBlack, niceBlue } from "../../static/constants";
+import LiveTvIcon from '@mui/icons-material/LiveTv';
 
 function UpdatesFrame(props) {
   const {
@@ -522,6 +523,8 @@ function UpdatesFrame(props) {
   const userWelcome = `Welcome back, ${user.firstName}!`;
   const todayDate = getTodaysDate();
   const updateMessege = `Update ${todayDate} is ready for you`;
+  const podcastKeywords = ["NSCLC", "Histology/EGFR"];
+  const videoKeywords = ["Thoracic tumour/Mesothelium", "Treatment/Immunotherapy"];
 
   useEffect(()=>{
     dispatch(initializeUser());
@@ -533,7 +536,9 @@ function UpdatesFrame(props) {
     history.push('/updates-research')
   }
 
-  console.log('suggestions',suggestions)
+  const isUserInterest = (keywordName) => {
+    return userInterests.some(interest=> interest.name===keywordName || interest.name.includes(keywordName));
+  }
 
   return (
     <div className="container-center-horizontal">
@@ -584,7 +589,7 @@ function UpdatesFrame(props) {
                   const lastIndex=userInterests?.length-1;
                   return(
                     <>
-                    <span className="sourcesanspro-normal-tangaroa-25px" style={{padding: "0px 10px 0px 10px"}}>{interest.name}</span>
+                    <span className="sourcesanspro-normal-tangaroa-25px" style={{padding: "0px 10px 0px 10px"}}>{getKeywordName(interest.name)}</span>
                     {index!==lastIndex && <span>|</span>}
                     </>
                   )
@@ -593,6 +598,100 @@ function UpdatesFrame(props) {
             </div>
           </div>
           <Grid container spacing={2} className="group-200" >
+          <Grid item xs={6} style={{ maxWidth:"730px"}}>
+                <Card style={{backgroundColor: "#ffffff", borderRadius: '16px', padding: "10px"}}>
+                  <CardContent>
+                    <Box style={{height: "70px", display: "flex", alignItems:"center"}}>
+                    <Typography style={{fontWeight: "bold", fontSize: "20px"}}>
+                      <span className="sourcesanspro-semi-bold-tangaroa-25px" >
+                      Oncology Today with Dr Neil Love: NSCLC with EGFR Exon 20 Insertion Mutations 
+                      </span>
+                    </Typography>
+                    </Box>
+                    <Divider style={{marginTop: "15px", marginBottom:"15px",borderBottomWidth: 3 , backgroundColor: almostBlack }}/>
+                    <Box sx={{ width: '100%', paddingBottom: "35px"}}>
+                      <Stack direction="row" spacing={2}>
+                        {podcastKeywords.map((keyword,index)=>{
+                          const isUserInterested = isUserInterest(keyword);
+                          return (<Box sx={{border: `1px solid ${niceBlue}` }} style={{borderBottomWidth: 1, backgroundColor: isUserInterested ? niceBlue : "white", borderRadius: '16px', padding: "5px"}}>
+                            <span className="span0 sourcesanspro-semi-bold-white-20px">
+                            <Typography style={{color: isUserInterested ? "white" : niceBlue, fontWeight: "bold"}}>{getKeywordName(keyword)}</Typography></span>
+                            </Box>
+                          )
+                        })}
+                      </Stack>
+                    </Box>
+                    {<Box direction="column" style={{maxHeight: "80px", paddingTop: "10px", paddibgBottom: "100px"}}>
+                      <Grid container style={{overflow: "hidden", textOverflow: "ellipsis", width: '100%'}}> 
+                      <img style={{maxHeight: "120px"}} src="/img/podcastThumbnail.png" />
+                      <Typography style={{maxHeight: "100px", width: "70%", paddingLeft: "20px"}}><span className="sourcesanspro-normal-blue-bayoux-20px">
+                      Featuring a discussion on advances in the treatment of patients with NSCLC harboring an EGFR exon 20 insertion mutations with Dr Gregory Riely, moderated by Dr Neil Love.</span>
+                      </Typography>
+                      </Grid>
+                    </Box>}
+                    
+                    <Box style={{maxHeight: "80px", paddingTop: "70px", marginBottom: "10px"}}>
+                      <Grid container>
+                        <Grid item xs={6}>
+                          <Button variant="outlined" onClick={onClickReadArticle}>
+                            {true && <Typography>Listen to podcast</Typography>}
+                          </Button>
+                        </Grid>
+                        <Grid item xs={6} style={{textAlign: "end"}}>
+                        {true && <img style={{height: "70%"}} src="/img/podcast.png" />}
+                        </Grid>
+                      </Grid>
+                    </Box>
+                  </CardContent>
+                </Card>
+                </Grid>
+            <Grid item xs={6} style={{ maxWidth:"730px"}}>
+                <Card style={{backgroundColor: "#ffffff", borderRadius: '16px', padding: "10px"}}>
+                  <CardContent>
+                    <Box style={{height: "70px", display: "flex", alignItems:"center"}}>
+                    <Typography className="oswald-normal-tangaroa-55px" style={{fontWeight: "bold", fontSize: "20px"}}>
+                    <span className="sourcesanspro-semi-bold-tangaroa-25px" >
+                    Prasad S. Adusumilli, MD, on CAR T-Cell Therapy for Mesothelioma
+                    </span>
+                    </Typography>
+                    </Box>
+                    <Divider style={{marginTop: "15px", marginBottom:"15px",borderBottomWidth: 3 , backgroundColor: almostBlack }}/>
+                    <Box sx={{ width: '100%', paddingBottom: "35px"}}>
+                      <Stack direction="row" spacing={2}>
+                        {
+                        videoKeywords.map((keyword,index)=>{
+                          const isUserInterested = isUserInterest(keyword);
+                          return (<Box sx={{border: `1px solid ${niceBlue}` }} style={{borderBottomWidth: 1, backgroundColor: isUserInterested ? niceBlue : "white", borderRadius: '16px', padding: "5px"}}>
+                            <Typography style={{color: isUserInterested ? "white" : niceBlue, fontWeight: "bold"}}>{getKeywordName(keyword)}</Typography>
+                            </Box>
+                          )
+                        })}
+                      </Stack>
+                    </Box>
+                    {<Box direction="column" style={{maxHeight: "80px", paddingTop: "10px", paddibgBottom: "100px"}}>
+                      <Grid container style={{overflow: "hidden", textOverflow: "ellipsis", width: '100%'}}> 
+                      <img style={{maxHeight: "120px"}} src="/img/thumbnailVideo.png" />
+                      <Typography style={{maxHeight: "100px", width: "70%", paddingLeft: "20px"}}><span className="sourcesanspro-normal-blue-bayoux-20px">
+                      Prasad S. Adusumilli, MD, of Memorial Sloan Kettering Cancer Center, discusses phase I/II research he is conducting on CAR T cells delivered intrapleurally in patients with mesothelioma. The treatment is targeting mesothelin, a cancer cell-surface antigen overexpressed in many solid tumors and associated with aggressive disease.</span>
+                      </Typography>
+                      </Grid>
+                    </Box>}
+                    
+                    <Box style={{maxHeight: "80px", paddingTop: "70px", marginBottom: "10px"}}>
+                      <Grid container>
+                        <Grid item xs={6}>
+                          <Button variant="outlined" onClick={onClickReadArticle}>
+                            {true && <Typography>Watch the video</Typography>}
+                          </Button>
+                        </Grid>
+                        <Grid item xs={6} style={{textAlign: "end"}}>
+                        <LiveTvIcon style={{color: niceBlue, fontSize: "40"}} size="large" ></LiveTvIcon>
+                        </Grid>
+                      </Grid>
+                    </Box>
+                  </CardContent>
+                </Card>
+                </Grid>
             {suggestions.map((suggestion,index)=>{
               const suggestionResource = suggestion.resource
               const suggestionKeywords = suggestion.resourceKeywords
@@ -600,39 +699,44 @@ function UpdatesFrame(props) {
                 <Grid item xs={6} style={{ maxWidth:"730px"}}>
                 <Card style={{backgroundColor: "#ffffff", borderRadius: '16px', padding: "10px"}}>
                   <CardContent>
-                    <Box style={{height: "70px", display: "flex", alignItems:"center"}}>
+                    <Box style={{height: "90px", display: "flex", alignItems:"center"}}>
                     <Typography className="oswald-normal-tangaroa-55px" style={{fontWeight: "bold", fontSize: "20px"}}>
+                    <span className="sourcesanspro-semi-bold-tangaroa-25px" >
                       {suggestionResource.title}
+                    </span>
                     </Typography>
                     </Box>
                     <Divider style={{marginTop: "15px", marginBottom:"15px",borderBottomWidth: 3 , backgroundColor: almostBlack }}/>
                     <Box sx={{ width: '100%', paddingBottom: "35px"}}>
                       <Stack direction="row" spacing={2}>
                         {suggestionKeywords.map((keyword,index)=>{
-                          return (<Box style={{borderBottomWidth: 1, backgroundColor: niceBlue, borderRadius: '16px', padding: "5px"}}>
-                            <Typography style={{color: "white", fontWeight: "bold"}}>{keyword.name}</Typography>
+                          const isUserInterested = isUserInterest(keyword.name);
+                          return (<Box sx={{border: `1px solid ${niceBlue}` }} style={{borderBottomWidth: 1, backgroundColor: isUserInterested ? niceBlue : "white", borderRadius: '16px', padding: "5px"}}>
+                            <Typography style={{color: isUserInterested ? "white" : niceBlue, fontWeight: "bold"}}>{getKeywordName(keyword.name)}</Typography>
                             </Box>
                           )
                         })}
                       </Stack>
                     </Box>
-                    {suggestionResource.abstract && <Box style={{maxHeight: "80px", paddingTop: "10px", paddibgBottom: "100px"}}>
-                      <div style={{overflow: "hidden", textOverflow: "ellipsis", width: '100%'}}> 
-                      <Typography style={{maxHeight: "100px"}}>
+                    {suggestionResource.abstract && <Box direction="column" style={{maxHeight: "80px", paddingTop: "10px", paddibgBottom: "100px"}}>
+                      <Grid container style={{overflow: "hidden", textOverflow: "ellipsis", width: '100%'}}> 
+                      <Typography style={{maxHeight: "118px", width: "100%"}}>
+                      <span className="sourcesanspro-normal-blue-bayoux-20px">
                         {suggestionResource.abstract}
+                      </span>
                       </Typography>
-                      </div>
+                      </Grid>
                     </Box>}
                     
-                    <Box style={{maxHeight: "80px", paddingTop: "50px"}}>
+                    <Box style={{maxHeight: "80px", paddingTop: "70px", marginBottom: "10px"}}>
                       <Grid container>
                         <Grid item xs={6}>
                           <Button variant="outlined" onClick={onClickReadArticle}>
                             <Typography>Read full article</Typography>
                           </Button>
                         </Grid>
-                        <Grid item xs={6}>
-
+                        <Grid item xs={6} style={{textAlign: "end"}}>
+                        <img style={{height: "70%"}} src="/img/artykul.png" />
                         </Grid>
                       </Grid>
                     </Box>

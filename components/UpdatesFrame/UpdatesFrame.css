@@ -13,7 +13,7 @@
 
 .rectangle-1-1 {
   background-color: var(--whisper);
-  height: 1078px;
+  height: 100%;
   left: 0;
   position: absolute;
   top: 2px;
@@ -213,11 +213,11 @@
   display: flex;
   height: 117px;
   justify-content: flex-end;
-  left: 10px;
+  left: 300px;
   min-width: 1092px;
   padding: 26.7px 235.9px;
   position: absolute;
-  top: 388px;
+  top: 368px;
 }
 
 .neoplasms-mole {

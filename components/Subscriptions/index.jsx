@@ -10,11 +10,12 @@ import { addInterest, getKeywordsSynonyms, getUsersInterests, removeInterest } f
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import { niceBlue, SAMPLE_USER_ID } from "../../static/constants";
-import { isUserInterestedInTheTopic } from "../../static/helpers";
-import { TextField } from "@mui/material";
+import { informationSources, niceBlue, SAMPLE_USER_ID } from "../../static/constants";
+import { getKeywordName, isUserInterestedInTheTopic } from "../../static/helpers";
+import { Grid , Card, CardContent, CardHeader, Typography} from "@mui/material";
 import { execFileSync } from "child_process";
 import { set } from "core-js/core/dict";
+import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 
 function Subscriptions(props) {
   const {
@@ -74,10 +75,11 @@ function Subscriptions(props) {
     group3Props,
   } = props;
 
-  const keywords = useSelector((state)=>state.keywords);
+  let keywords = useSelector((state)=>state.keywords);
   const userInterests = useSelector((state)=>state.userInterests);
   const [triggerRefresh, setTriggerRefresh] = useState(true);
-  
+  console.log('keywords: ', keywords);
+  keywords = keywords.sort((a, b) => a.name.localeCompare(b.name));
 
   const dispatch = useDispatch();
 
@@ -89,7 +91,11 @@ function Subscriptions(props) {
     }
   },[triggerRefresh])
 
-  
+  const indentFactor = (keywordPath) => {
+    console.log(((keywordPath.split('/').length-1)*30)?.toString()+"px")
+    return ((keywordPath.split('/').length-1)*30)?.toString()+"px";
+  }
+
   console.log(userInterests);
 
   return (
@@ -131,27 +137,10 @@ function Subscriptions(props) {
               <img className="path-161" src={path161} />
             </Link>
             <div className="overlap-group8">
-              <div className="group-50"></div>
               <div className="rectangle-42"></div>
               <div className="currently-subscipted-to sourcesanspro-semi-bold-white-34px">{currentlySubsciptedTo}</div>
               <Group3 className={group3Props.className} />
               <div className="overlap-group1-2">
-                <div className="rectangle"></div>
-                <div className="overlap-group-8">
-                  <img className="path-35" src={path35} />
-                  <div className="ellipse-14 border-2px-whisper"></div>
-                </div>
-                <div className="number sourcesanspro-semi-bold-white-34px">{number1}</div>
-              </div>
-              <div className="overlap-group2-2">
-                <div className="rectangle"></div>
-                <div className="number sourcesanspro-semi-bold-white-34px">{number2}</div>
-                <div className="line-container border-2px-whisper">
-                  <img className="line-5-1" src={line5} />
-                  <img className="line-6" src={line6} />
-                </div>
-              </div>
-              <div className="overlap-group3-1">
                 <div className="rectangle"></div>
                 <div className="overlap-group-9" style={{ backgroundImage: `url(${overlapGroup})` }}>
                   <img className="path-37" src={path37} />
@@ -159,8 +148,16 @@ function Subscriptions(props) {
                   <img className="line" src={line8} />
                   <img className="line" src={line9} />
                 </div>
-                <div className="number-1 sourcesanspro-semi-bold-white-34px">{number3}</div>
+                <div className="number-1 sourcesanspro-semi-bold-white-34px">{userInterests?.length}</div>
               </div>
+              <div className="overlap-group2-2">
+                <div className="rectangle"></div>
+                <div className="cloud-icon">
+                <DynamicFeedIcon variant="outline" style={{marginTop: "15px",color: "white", fontSize: 40, marginLeft: "45px"}}></DynamicFeedIcon>
+                </div>
+                <div className="number-1 sourcesanspro-semi-bold-white-34px">{8}</div>
+              </div>
+              <Grid>
               <div className="overlap-group4-1">
                 <div className="rectangle-51"></div>
                 <div className="group-70">
@@ -177,37 +174,69 @@ function Subscriptions(props) {
                   {searchWithinSubscriptions}
                 </div>
               </div>
-              <div className="rectangle-66"></div>
-              <div className="topics sourcesanspro-semi-bold-blue-bayoux-25px">
-                <span className="sourcesanspro-semi-bold-tangaroa-25px">{spanText5}</span>
-                <span className="sourcesanspro-normal-blue-bayoux-20px">{spanText6}</span>
-              </div>
-              <div className="biomarkers">
-              <FormGroup style={{maxHeight: "270px", maxWidth: "95%", overflow: "auto", direction: "ltr"}}>
-                {keywords.map((keyword)=>{
-                  const userInterested = isUserInterestedInTheTopic(keyword.name, userInterests)
-                  return (
-                    <>
-                      <FormControlLabel 
-                      control={
-                        <Checkbox checked={userInterested} onClick={(event)=>{
-                          if(userInterested)
-                            dispatch(removeInterest(keyword));
-                          else
-                            dispatch(addInterest(keyword));
-                          setTriggerRefresh(true);
-                        }} sx={{
-                          color: niceBlue,
-                          '&.Mui-checked': {
+              <Grid container style={{backgroundColor: "white",  borderRadius: '16px', padding: "200px 25px 25px 25px"}}>
+                <Grid item xs={6} style={{width: "100%"}}>
+                  <Card style={{backgroundColor: "#f2f5f7", borderRadius: '16px', padding: "10px", margin: "40px 30px 30px 30px"}}>
+                    <CardHeader title="Topics: " className="sourcesanspro-semi-bold-tangaroa-25px">
+                    </CardHeader>
+                      <CardContent>
+                    <FormGroup row style={{maxHeight: "300px",  overflow: "auto"}}>
+                      {keywords.map((keyword)=>{
+                        const factor = indentFactor(keyword.name);
+                        const isChecked = isUserInterestedInTheTopic(keyword.name, userInterests)
+                        return (
+                          <>
+                        <FormControlLabel 
+                        control={
+                          <Checkbox checked={isChecked} onClick={(event)=>{
+                            if(userInterested)
+                              dispatch(removeInterest(keyword));
+                            else
+                              dispatch(addInterest(keyword));
+                            setTriggerRefresh(true);
+                          }} sx={{
                             color: niceBlue,
-                          },
-                        }}/>
-                      } label={<label className="sourcesanspro-normal-blue-bayoux-20px">{keyword.name}</label>} />
-                    </>
-                  )
-                })}
-              </FormGroup>
-              </div>
+                            '&.Mui-checked': {
+                              color: niceBlue,
+                            },
+                          }}/>
+                        } label={<label className="sourcesanspro-normal-blue-bayoux-20px">{getKeywordName(keyword?.name)}</label>} style={{paddingLeft: factor, width: "-webkit-fill-available"}} />
+                      </>
+                        )
+                      })}
+                      </FormGroup>
+                    </CardContent>
+                  </Card>
+                </Grid>
+                <Grid item xs={6} style={{width: "100%"}}>
+                  <Card style={{backgroundColor: "#f2f5f7", borderRadius: '16px', padding: "10px", margin: "40px 30px 30px 30px"}}>
+                    <CardHeader title="Sources: " className="sourcesanspro-semi-bold-tangaroa-25px">
+                    </CardHeader>
+                      <CardContent>
+                    <FormGroup row style={{maxHeight: "300px",  overflow: "auto"}}>
+                      {informationSources.map((source)=>{
+                        return (
+                          <>
+                        <FormControlLabel 
+                        control={
+                          <Checkbox checked={true} onClick={(event)=>{
+                          }} sx={{
+                            color: niceBlue,
+                            '&.Mui-checked': {
+                              color: niceBlue,
+                            },
+                          }}/>
+                        } label={<label className="sourcesanspro-normal-blue-bayoux-20px">{getKeywordName(source)}</label>} style={{ width: "-webkit-fill-available"}} />
+                      </>
+                        )
+                      })}
+                      </FormGroup>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              </Grid>
+              </Grid>
+              
             </div>
           </div>
         </div>

@@ -126,7 +126,7 @@ function Scheduling(props) {
           <Group9 src={group9Props.src} />
           <div className="subscriptions sourcesanspro-semi-bold-tangaroa-25px">{subscriptions}</div>
           <div className="community sourcesanspro-semi-bold-tangaroa-25px">{community}</div>
-          <Link to="/update-frame">
+          <Link to="/updates-frame">
           <div className="updates sourcesanspro-semi-bold-tangaroa-25px">{updates}</div>
           </Link>
           <div className="overlap-group5">
