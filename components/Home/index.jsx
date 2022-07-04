@@ -41,10 +41,12 @@ function Home(props) {
         <div className="overlap-group1-6">
           <div className="rectangle-139"></div>
           <div className="rectangle-140"></div>
+          <Link to="/home">
           <div className="onconnect-5 oswald-normal-cerulean-55px">
             <span className="oswald-normal-tangaroa-55px">{spanText1}</span>
             <span className="oswald-normal-cerulean-55px">{spanText2}</span>
           </div>
+          </Link>
           <Group6 className={group6Props.className} />
           <img className="path-64" src={path64} />
           <div className="profile-5 sourcesanspro-semi-bold-tangaroa-25px">{profile}</div>
@@ -58,7 +60,7 @@ function Home(props) {
           </Link>
           <div className="rectangle-141"></div>
           <div className="group-95">
-            <Link to="home">
+            <Link to="/updates-frame">
             <div className="updates-5 sourcesanspro-semi-bold-tangaroa-25px">{updates1}</div>
             </Link>
           </div>
@@ -85,7 +87,9 @@ function Home(props) {
           </Link>
           <div className="rectangle-181"></div>
           <div className="rectangle-182"></div>
+          <Link to="/updates-frame">
           <div className="updates-6 sourcesanspro-semi-bold-white-35px">{updates2}</div>
+          </Link>
           <Link to="/subscriptions">
             <div className="subscriptions-7 sourcesanspro-semi-bold-white-35px">{subscriptions2}</div>
           </Link>

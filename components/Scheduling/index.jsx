@@ -116,10 +116,12 @@ function Scheduling(props) {
           <img className="path-61" src={path61} />
           <img className="path-62" src={path62} />
           <div className="rectangle-2"></div>
+          <Link to="/home">
           <div className="onconnect oswald-normal-cerulean-55px">
             <span className="oswald-normal-tangaroa-55px">{spanText1}</span>
             <span className="oswald-normal-cerulean-55px">{spanText2}</span>
           </div>
+          </Link>
           <Group6 />
           <img className="path-2" src={path2} />
           <div className="profile sourcesanspro-semi-bold-tangaroa-25px">{profile}</div>

@@ -25,7 +25,7 @@ window.onkeydown = function(event){
 	const img = document.createElement("img");
 	
 	img.src = '/img/notification_package.png';
-	img.style = "border-radius: 17px";
+	img.style = "border-radius: 20px";
 	img.onclick = function() {
 		window.location.href = 'http://localhost:1234/updates-frame';
 	};

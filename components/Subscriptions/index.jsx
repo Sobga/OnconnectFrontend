@@ -105,10 +105,12 @@ function Subscriptions(props) {
           <div className="overlap-group7">
             <div className="rectangle-45"></div>
             <div className="rectangle-2-1"></div>
+            <Link to="/home">
             <div className="onconnect-2 oswald-normal-cerulean-55px">
               <span className="oswald-normal-tangaroa-55px">{spanText1}</span>
               <span className="oswald-normal-cerulean-55px">{spanText2}</span>
             </div>
+            </Link>
             <Group6 />
             <img className="path-2-1" src={path2} />
             <div className="profile-2 sourcesanspro-semi-bold-tangaroa-25px">{profile}</div>

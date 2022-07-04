@@ -547,10 +547,12 @@ function UpdatesFrame(props) {
           <div className="rectangle-1-1"></div>
           <div className="rectangle-2-3"></div>
           <div className="rectangle-3-1"></div>
+          <Link to="/home">
           <div className="onconnect-4 oswald-normal-cerulean-55px">
             <span className="oswald-normal-tangaroa-55px">{spanText1}</span>
             <span className="oswald-normal-cerulean-55px">{spanText2}</span>
           </div>
+          </Link>
           <div className="welcome-back-lars sourcesanspro-semi-bold-white-34px">
             <span className="sourcesanspro-semi-bold-white-34px">{userWelcome}</span>
             <span className="span1">{spanText4}</span>
