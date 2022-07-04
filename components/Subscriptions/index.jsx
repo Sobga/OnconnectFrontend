@@ -13,8 +13,6 @@ import Checkbox from '@mui/material/Checkbox';
 import { informationSources, niceBlue, SAMPLE_USER_ID } from "../../static/constants";
 import { getKeywordName, isUserInterestedInTheTopic } from "../../static/helpers";
 import { Grid , Card, CardContent, CardHeader, Typography} from "@mui/material";
-import { execFileSync } from "child_process";
-import { set } from "core-js/core/dict";
 import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 
 function Subscriptions(props) {
