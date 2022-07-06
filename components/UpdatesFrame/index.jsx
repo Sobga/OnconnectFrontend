@@ -672,7 +672,7 @@ function UpdatesFrame(props) {
                     </Box>
                     {<Box direction="column" style={{maxHeight: "80px", paddingTop: "10px", paddibgBottom: "100px"}}>
                       <Grid container style={{overflow: "hidden", textOverflow: "ellipsis", width: '100%'}}> 
-                      <img style={{maxHeight: "120px"}} src="/img/thumbnailVideo.png" />
+                      <img style={{maxHeight: "120px"}} src="./thumbnailVideo.png" />
                       <Typography style={{maxHeight: "100px", width: "70%", paddingLeft: "20px"}}><span className="sourcesanspro-normal-blue-bayoux-20px">
                       Prasad S. Adusumilli, MD, of Memorial Sloan Kettering Cancer Center, discusses phase I/II research he is conducting on CAR T cells delivered intrapleurally in patients with mesothelioma. The treatment is targeting mesothelin, a cancer cell-surface antigen overexpressed in many solid tumors and associated with aggressive disease.</span>
                       </Typography>
